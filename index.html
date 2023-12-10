@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="details">
+        Name: <input type="text" id="detailsInput" placeholder="Enter Your Name"> <button onclick="printDetails()">Print
+            Name</button>
+        Email: <input type="email" id="emailInput" placeholder="Enter Your Email"> <button onclick="emailDetails()">Print
+            Email</button> 
+        Mobile no. : <input type="number" id="numberInput" placeholder="Enter Your Email"> <button
+            onclick="numberDetails()">Print Number</button>
+
+
+    </div>
+    <div class="main">
+
+
+
+        <div class="box bg1">
+            <h1 id="title">
+                CSS Property
+                <hr>
+            </h1>
+            <h2>
+                Background Image
+                <br>
+            </h2>
+            <div class="button">
+                <input type="button" value="01" id="01"
+                    onclick="document.getElementById('card').style.backgroundImage='url(image/01.jpg)'">
+                <input type="button" value="02" id="02"
+                    onclick="document.getElementById('card').style.backgroundImage='url(image/02.jpg)'">
+                <input type="button" value="03" id="03"
+                    onclick="document.getElementById('card').style.backgroundImage='url(image/03.jpg)'">
+                <input type="button" value="04" id="04"
+                    onclick="document.getElementById('card').style.backgroundImage='url(image/04.jpg)'">
+                <input type="button" value="05" id="05"
+                    onclick="document.getElementById('card').style.backgroundImage='url(image/05.jpg)'">
+            </div>
+
+            <div>
+                <h2>
+                    Name Font Size
+                    <br>
+    
+                </h2>
+                <div class="button_2">
+                    <input type="button" value="20px" onclick="document.getElementById('detailsOutput').style.fontSize='20px'">
+                    <input type="button" value="30px" onclick="document.getElementById('detailsOutput').style.fontSize='30px'">
+                    <input type="button" value="35px" onclick="document.getElementById('detailsOutput').style.fontSize='35px'">
+                    <input type="button" value="50px" onclick="document.getElementById('detailsOutput').style.fontSize='50px'">
+                </div>
+                <div class="button_2">
+                    <input type="button" value="Red" onclick="document.getElementById('detailsOutput').style.color='red'">
+                    <input type="button" value="White" onclick="document.getElementById('detailsOutput').style.color='white'">
+                    <input type="button" value="Black" onclick="document.getElementById('detailsOutput').style.color='black'">
+                </div>
+            </div>
+
+            <div>
+                <h2>
+                    Email Font Size
+                    <br>
+    
+                </h2>
+                <div class="button_2">
+                    <input type="button" value="20px" onclick="document.getElementById('emailoutput').style.fontSize='20px'">
+                    <input type="button" value="30px" onclick="document.getElementById('emailoutput').style.fontSize='30px'">
+                    <input type="button" value="35px" onclick="document.getElementById('emailoutput').style.fontSize='35px'">
+                    <input type="button" value="50px" onclick="document.getElementById('emailoutput').style.fontSize='50px'">
+                </div>
+                <div class="button_2">
+                    <input type="button" value="Red" onclick="document.getElementById('emailoutput').style.color='red'">
+                    <input type="button" value="White" onclick="document.getElementById('emailoutput').style.color='white'">
+                    <input type="button" value="Black" onclick="document.getElementById('emailoutput').style.color='black'">
+                </div>
+            </div>
+
+
+            <div>
+                <h2>
+                    Number Font Size
+                    <br>
+    
+                </h2>
+                <div class="button_2">
+                    <input type="button" value="20px" onclick="document.getElementById('numberoutput').style.fontSize='20px'">
+                    <input type="button" value="30px" onclick="document.getElementById('numberoutput').style.fontSize='30px'">
+                    <input type="button" value="35px" onclick="document.getElementById('numberoutput').style.fontSize='35px'">
+                    <input type="button" value="50px" onclick="document.getElementById('numberoutput').style.fontSize='50px'">
+                </div>
+                <div class="button_2">
+                    <input type="button" value="Red" onclick="document.getElementById('numberoutput').style.color='red'">
+                    <input type="button" value="White" onclick="document.getElementById('numberoutput').style.color='white'">
+                    <input type="button" value="Black" onclick="document.getElementById('numberoutput').style.color='black'">
+                </div>
+            </div>
+
+            <div>
+                <h2>
+                    Text Align 
+                    <br>
+    
+                </h2>
+                <div class="button_2">
+                    <input type="button" value="Center" onclick="document.getElementById('box').style.textAlign='center'">
+                    <input type="button" value="Left" onclick="document.getElementById('box').style.textAlign='left'">
+                    <input type="button" value="Right" onclick="document.getElementById('box').style.textAlign='right'">
+                </div>
+            </div>
+
+            <!-- <div>
+                <h2>
+                    Text Color 
+                    <br>
+    
+                </h2>
+                <div class="button_2">
+                    <input type="button" value="Red" onclick="document.getElementById('detailsOutput').style.color='red'">
+                    <input type="button" value="White" onclick="document.getElementById('detailsOutput').style.color='white'">
+                    <input type="button" value="Black" onclick="document.getElementById('detailsOutput').style.color='black'">
+                </div>
+            </div> -->
+
+
+            
+           
+
+            
+        </div>
+        <div class="box bg2" id="box">
+            <div class="card " id="card">
+                <div id="detailsOutput"></div>
+                <div id="emailoutput"></div>
+                <div id="numberoutput"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // JavaScript function to handle the onclick event
+        function printDetails() {
+            // Get the value entered in the input field
+            var details = document.getElementById("detailsInput").value;
+
+            // Display the details in the output area
+            document.getElementById("detailsOutput").innerHTML = details;
+        }
+
+        // JavaScript function to handle the onclick event
+        function emailDetails() {
+            // Get the value entered in the input field
+            var details_2 = document.getElementById("emailInput").value;
+
+            // Display the details in the output area
+            document.getElementById("emailoutput").innerHTML = details_2;
+        }
+
+         // JavaScript function to handle the onclick event
+         function numberDetails() {
+            // Get the value entered in the input field
+            var details_3 = document.getElementById("numberInput").value;
+
+            // Display the details in the output area
+            document.getElementById("numberoutput").innerHTML = details_3;
+        }
+    </script>
+</body>
+
+</html>

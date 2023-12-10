@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 80%;
+    height: 80vh;
+    background-color: rgb(207, 203, 203);
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.bg1{
+    background-color: cornsilk;
+}
+.bg2{
+    background-color: rgb(199, 193, 171);
+}
+.box{
+    width: 45%;
+    height: 70vh;
+    margin: 5vh auto;
+    
+}
+
+/* #box{
+    
+} */
+
+
+#title{
+    margin-top: 1%;
+    text-align: center;
+}
+
+#title hr{
+    margin-left: 10%;
+    width: 80%;
+}
+
+h2{
+
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.card{
+    width: 95%;
+    height: 40vh;
+    margin: 15vh auto;
+    background-color: azure;
+    background-image: url(image/01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.button_2{
+    margin-top: 2%;
+}
+.button input{
+    width: 15%;
+    height: 3vh;
+}
+
+
+.details{
+    margin-top: 5vh;
+   padding-top: 2.5vh;
+    height: 10vh;
+    background-color: beige;
+    padding-left: 11%;
+ font-size: 1.5rem;
+
+}
+
+.details input{
+    font-size: 1rem;
+    }
+
+    .details button{
+        font-size: .9rem;
+        margin-right: 2%;
+        }
+    
+
+#detailsOutput {
+    color: rgb(250, 250, 252); /* Change text color */
+    font-size: 2rem; /* Change font size */
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-top:2% ;
+}
+
+
+#emailoutput{
+    color: rgb(250, 250, 252); /* Change text color */
+    font-size: 2rem; /* Change font size */
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+#numberoutput{
+    color: rgb(250, 250, 252); /* Change text color */
+    font-size: 2rem; /* Change font size */
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+
+.button_2{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.button_2 input{
+    width: 15%;
+    height: 3vh;
+}
